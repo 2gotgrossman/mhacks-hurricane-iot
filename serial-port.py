@@ -1,4 +1,4 @@
-import serial
+import  serial
 import time
 import nifty_sql
 from threading import Thread
@@ -35,13 +35,12 @@ def parse_data(raw_data):
 ser.flushInput()
 ser.flushOutput()
 
-with open("/Users/David/Downloads/messing.txt", 'a') as file:
-    while True:
-        raw_data = ser.readline()
-        parsed_data = parse_data(raw_data)
-        print parsed_data
+while True:
+    raw_data = ser.readline()
+    parsed_data = parse_data(raw_data)
+    print parsed_data
 
-        # file.write(str(parsed_data))
+    # file.write(str(parsed_data))
 
-        t = Thread( target = send_data_to_database, kwargs={'parsed_data' : parsed_data} )
-        t.start()
+    t = Thread( target = send_data_to_database, kwargs={'parsed_data' : parsed_data} )
+    t.start()

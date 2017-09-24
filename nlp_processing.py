@@ -1,4 +1,5 @@
 import json
+import nifty_sql
 
 def get_dict():
     humiditiy = ['humid', 'muggy', 'mugginess', 'humidness', 'stuffy', 'stuffiness', 'dampness', 'damp', 'dankness', 'dank', 'moisture', 'moist', 'moistness', 'wetness', 'wet', 'humidity']
@@ -126,3 +127,5 @@ time_period = get_time_period(text_list)
 number = get_number(text_list)
 
 print category, time_period, number
+
+print nifty_sql.sql_query()['Temperature'].describe()['max']

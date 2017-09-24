@@ -1,4 +1,5 @@
 import pyodbc
+import pandas.io.sql as psql
 
 server = 'hurricane-iot-server.database.windows.net'
 database = 'hurricane-iot'
@@ -25,7 +26,6 @@ def insert(column_names=[], values=[]):
         print command
         cursor.execute(command)
         cnxn.commit()
-        # cnxn.commit()
 
 
 
@@ -43,3 +43,7 @@ def select_statement(cmd="SELECT Data, Temperature, Humidity FROM Data"):
 def sql_command(cmd=""):
     cursor.execute(cmd)
     cnxn.commit()
+
+def sql_query(X="SELECT Timestamp, Temperature, Humidity, SoundDecibels FROM Data"):
+    df = psql.read_sql(X, cnxn)
+    return df

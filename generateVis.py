@@ -14,7 +14,6 @@ cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;D
 cursor = cnxn.cursor()
 
 def tempVis(X):
-
 #     Create dataframe
     df = psql.read_sql(X, cnxn)
     df.rename(columns={'TEMPERATURE': 'Temperature', 'TIMESTAMP': 'Time'}, inplace=True)
