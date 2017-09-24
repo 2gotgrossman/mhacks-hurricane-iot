@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbe1c2a-de5d-4edf-8a1d-e58962ad342e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/nifty_sql.py" afterPath="$PROJECT_DIR$/backend/nifty_sql.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/serial-port.py" afterPath="$PROJECT_DIR$/backend/serial-port.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generateVis.py" afterPath="$PROJECT_DIR$/generateVis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voice-queries/nlp_processing.py" afterPath="$PROJECT_DIR$/voice-queries/nlp_processing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fit_data.py" afterPath="$PROJECT_DIR$/src/fit_data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/generateVis.py" afterPath="$PROJECT_DIR$/src/generateVis.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/generate_data.py" afterPath="$PROJECT_DIR$/src/generate_data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/generate_timestamps.py" afterPath="$PROJECT_DIR$/src/generate_timestamps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nifty_sql.py" afterPath="$PROJECT_DIR$/src/nifty_sql.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nlp_processing.py" afterPath="$PROJECT_DIR$/src/nlp_processing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/py-messing.py" afterPath="$PROJECT_DIR$/src/py-messing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pyoxford-playing.py" afterPath="$PROJECT_DIR$/src/pyoxford-playing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/serial-port.py" afterPath="$PROJECT_DIR$/src/serial-port.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/speech.py" afterPath="$PROJECT_DIR$/src/speech.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/voice_to_text_json.json" afterPath="$PROJECT_DIR$/src/voice_to_text_json.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,91 +26,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generate_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/generate_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serial-port.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/serial-port.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fit_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/fit_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_timestamps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/generate_timestamps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#2889#2920#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nlp_processing.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/voice-queries/nlp_processing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#761#1401#0" expanded="false" />
-                <element signature="e#1442#2285#0" expanded="false" />
-                <element signature="e#2329#2977#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generateVis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generateVis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nifty_sql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/nifty_sql.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -116,8 +38,8 @@
       <find>print</find>
       <find>float</find>
       <find>rou</find>
-      <find>tempVis</find>
       <find>time</find>
+      <find>tempVis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,21 +109,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="voice-queries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhacks-hurricane-iot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhacks-hurricane-iot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,9 +375,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25814137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25814137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -629,19 +537,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/generate_timestamps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#2889#2920#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -657,9 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -675,9 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,12 +577,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#761#1401#0" expanded="false" />
-            <element signature="e#1442#2285#0" expanded="false" />
-            <element signature="e#2329#2977#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/generate_timestamps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
