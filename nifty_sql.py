@@ -23,7 +23,8 @@ def insert(column_names=[], values=[]):
         value_str = map(lambda x : str(x), value)
         command = "INSERT INTO Data (%s) VALUES (%s)" % ( ",".join(column_names), ",".join(value_str) )
         print command
-        # cursor.execute()
+        cursor.execute(command)
+        cnxn.commit()
         # cnxn.commit()
 
 
