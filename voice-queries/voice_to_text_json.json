@@ -1,0 +1,42 @@
+{
+   "RecognitionStatus": "Success",
+   "Offset": 8300000,
+   "Duration": 32300000,
+   "NBest": [
+      {
+         "Confidence": 0.942007065,
+         "Lexical": "how is the temperature been over the past five days",
+         "ITN": "how is the temperature been over the past 5 days",
+         "MaskedITN": "how is the temperature been over the past 5 days",
+         "Display": "How is the temperature been over the past 5 days?"
+      },
+      {
+         "Confidence": 0.9095649,
+         "Lexical": "how is the temperature be over the past five days",
+         "ITN": "how is the temperature be over the past 5 days",
+         "MaskedITN": "how is the temperature be over the past 5 days",
+         "Display": "How is the temperature be over the past 5 days?"
+      },
+      {
+         "Confidence": 0.908731,
+         "Lexical": "how is the temperature been for the past five days",
+         "ITN": "how is the temperature been for the past 5 days",
+         "MaskedITN": "how is the temperature been for the past 5 days",
+         "Display": "How is the temperature been for the past 5 days?"
+      },
+      {
+         "Confidence": 0.908731,
+         "Lexical": "how is the temperature in over the past five days",
+         "ITN": "how is the temperature in over the past 5 days",
+         "MaskedITN": "how is the temperature in over the past 5 days",
+         "Display": "How is the temperature in over the past 5 days?"
+      },
+      {
+         "Confidence": 0.908731,
+         "Lexical": "how is the temperature be in over the past five days",
+         "ITN": "how is the temperature be in over the past 5 days",
+         "MaskedITN": "how is the temperature be in over the past 5 days",
+         "Display": "How is the temperature be in over the past 5 days?"
+      }
+   ]
+}
