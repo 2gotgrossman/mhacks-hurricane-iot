@@ -11,17 +11,34 @@ cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;D
 cursor = cnxn.cursor()
 
 # INSERT statement
-cursor.execute("INSERT INTO Temp (Temp, Date) VALUES ('1', '1')")
-cnxn.commit()
+def insert(column_names=[], values=[]):
+    """
+
+    :param key_value_pairs: The column_names variable should be a list of strings. Each string refers to the name of a column.
+                    The values should be a list of lists (or tuples) where each entry in the list is a row in the table.
+    :return:
+    """
+
+    for value in values:
+        value_str = map(lambda x : str(x), value)
+        command = "INSERT INTO Data (%s) VALUES (%s)" % ( ",".join(column_names), ",".join(value_str) )
+        print command
+        # cursor.execute()
+        # cnxn.commit()
 
 
-# SELECT statement
-cursor.execute("SELECT Temp, Date FROM Temp")
+
+def select_statement(cmd="SELECT Data, Temperature, Humidity FROM Data"):
+    # SELECT statement
+    cursor.execute(cmd)
 
 
-# Prints what was last in your cursor
-row = cursor.fetchone()
-while row:
-    print 'Inserted Product key is ' + str(row)
+    # Prints what was last in your cursor
     row = cursor.fetchone()
+    while row:
+        print 'Inserted Product key is ' + str(row)
+        row = cursor.fetchone()
 
+def sql_command(cmd=""):
+    cursor.execute(cmd)
+    cnxn.commit()
